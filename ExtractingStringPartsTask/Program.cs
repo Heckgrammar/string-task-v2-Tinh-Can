@@ -1,4 +1,4 @@
-﻿namespace ExtractingStringPartsTask
+namespace ExtractingStringPartsTask
 {
     internal class Program
     {
@@ -38,6 +38,19 @@
 
             //************CHALLENGE****************//
             // Output how many vowels are in each of the strings in the format
+
+            int vowels = 0;
+            foreach (char c in state)
+            {
+                if ((c == 'a') || (c == 'e') || (c == 'i') || (c == 'o') || (c == 'u'))
+                {
+                    vowels++;
+                }
+            }
+
+            Console.WriteLine(vowels);
+
+
             // California has n vowels
 
 
